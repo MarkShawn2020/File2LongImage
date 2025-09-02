@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-02T17:22:39.816301",
+  "log_id": "20250902_172239_98472",
+  "file_name": "嘉琪-felo-大纲-1.1_Felo_大纲生成_AirBed&Breakfast_ Redefining Travel & Hospitality.pptx",
+  "file_path": "/Users/mark/neurora/项目/ai-bp-comparison/airbnb-bp-research/嘉琪-felo-大纲-1.1_Felo_大纲生成_AirBed&Breakfast_ Redefining Travel & Hospitality.pptx",
+  "file_size": 1175644,
+  "file_hash": "3e48d017b7718bc9",
+  "error_type": "ValueError",
+  "error_message": "Office转换PDF失败: LibreOffice无法处理此文件",
+  "error_step": "转换PDF",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/mark/repos/File2LongImage/mac_app_parallel.py\", line 411, in convert_file_worker\n    raise ValueError(f\"Office转换PDF失败: LibreOffice无法处理此文件\")\nValueError: Office转换PDF失败: LibreOffice无法处理此文件\n",
+  "conversion_params": {
+    "dpi": 200,
+    "format": "PNG",
+    "quality": null
+  },
+  "system_info": {
+    "os_name": "Darwin",
+    "os_version": "Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6000",
+    "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "cpu_count": 10,
+    "memory_total": "32.0 GB",
+    "disk_free": null,
+    "poppler_version": null,
+    "libreoffice_version": "LibreOffice 25.8.1.1 54047653041915e595ad4e45cccea684809c77b5",
+    "pil_version": "10.4.0",
+    "pdf2image_version": "Unknown"
+  },
+  "elapsed_time": 8.73823094367981,
+  "memory_usage": "106.3 MB"
+}

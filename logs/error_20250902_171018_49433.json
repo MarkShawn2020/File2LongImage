@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-02T17:10:18.577014",
+  "log_id": "20250902_171018_49433",
+  "file_name": "document.pdf",
+  "file_path": "/Users/test/document.pdf",
+  "file_size": null,
+  "file_hash": null,
+  "error_type": "ZeroDivisionError",
+  "error_message": "division by zero",
+  "error_step": "渲染页面",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/mark/repos/File2LongImage/error_logger.py\", line 344, in <module>\n    1 / 0\n    ~~^~~\nZeroDivisionError: division by zero\n",
+  "conversion_params": {
+    "dpi": 200,
+    "format": "PNG",
+    "quality": 85
+  },
+  "system_info": {
+    "os_name": "Darwin",
+    "os_version": "Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6000",
+    "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+    "cpu_count": 10,
+    "memory_total": "32.0 GB",
+    "disk_free": null,
+    "poppler_version": null,
+    "libreoffice_version": "LibreOffice 25.8.1.1 54047653041915e595ad4e45cccea684809c77b5",
+    "pil_version": "10.4.0",
+    "pdf2image_version": "Unknown"
+  },
+  "elapsed_time": 3.5,
+  "memory_usage": "42.0 MB"
+}

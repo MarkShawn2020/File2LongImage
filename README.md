@@ -8,6 +8,14 @@
   <img src="assets/demo.png" alt="File2LongImage 演示" width="800"/>
 </p>
 
+### 🚀 并行处理版本
+
+<p align="center">
+  <img src="assets/demo-parallel.png" alt="并行处理演示" width="800"/>
+  <br>
+  <em>支持多文件并行转换，独立进度控制，实时状态显示</em>
+</p>
+
 ## ✨ 功能特点
 
 - 📄 **多格式支持**：PDF、Word、Excel、PPT、TXT、RTF 等

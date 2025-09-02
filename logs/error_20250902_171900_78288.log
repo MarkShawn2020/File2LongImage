@@ -1,0 +1,45 @@
+======================================================================
+错误报告 - 2025-09-02T17:19:00.668991
+日志ID: 20250902_171900_78288
+======================================================================
+
+【文件信息】
+文件名: 嘉琪-felo-大纲-1.1_Felo_大纲生成_AirBed&Breakfast_ Redefining Travel & Hospitality.pptx
+路径: /Users/mark/neurora/项目/ai-bp-comparison/airbnb-bp-research/嘉琪-felo-大纲-1.1_Felo_大纲生成_AirBed&Breakfast_ Redefining Travel & Hospitality.pptx
+大小: 1.1 MB (1,175,644 bytes)
+哈希: 3e48d017b7718bc9
+
+【错误信息】
+类型: ValueError
+步骤: 转换PDF
+消息: 无法生成图像
+
+【转换参数】
+dpi: 200
+format: PNG
+quality: None
+
+【执行信息】
+耗时: 2.6 秒
+内存使用: 150.8 MB
+
+【系统环境】
+操作系统: Darwin Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 ...
+Python: 3.12.7
+CPU核心: 10
+总内存: 32.0 GB
+
+【依赖版本】
+PIL/Pillow: 10.4.0
+pdf2image: Unknown
+LibreOffice: LibreOffice 25.8.1.1 54047653041915e595ad4e45cccea684809c77b5
+
+【调用栈追踪】
+Traceback (most recent call last):
+  File "/Users/mark/repos/File2LongImage/mac_app_parallel.py", line 430, in convert_file_worker
+    raise ValueError("无法生成图像")
+ValueError: 无法生成图像
+
+======================================================================
+报告结束
+======================================================================
