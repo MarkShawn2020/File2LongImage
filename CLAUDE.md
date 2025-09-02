@@ -19,7 +19,12 @@ File2LongImage 是一个文件转换工具，将多种格式文档（PDF、Word�
    - 独立的桌面应用实现
    - Windows 优化（使用 os.startfile）
 
-3. **config.py** - 系统配置管理
+3. **mac_app.py** / **mac_app_simple.py** - macOS 原生应用
+   - 完整版支持拖放功能（需要 tkinterdnd2）
+   - 简化版无需额外依赖
+   - macOS 菜单栏集成和快捷键支持
+
+4. **config.py** - 系统配置管理
    - 自动检测操作系统并配置路径
    - Poppler 和 LibreOffice 路径管理
 
@@ -51,8 +56,20 @@ python run_app.py
 # 运行桌面版
 python TKGUI.py
 
+# 运行 macOS 原生应用（开发版）
+python mac_app.py          # 完整版（支持拖放）
+python mac_app_simple.py   # 简化版（无需 tkinterdnd2）
+
+# 构建 macOS 应用
+chmod +x build_mac.sh
+./build_mac.sh
+
+# 手动打包 macOS 应用
+python setup.py py2app
+
 # 安装依赖
 pip install -r requirements.txt
+pip install -r requirements_gui.txt  # GUI 额外依赖
 
 # macOS 安装系统依赖
 brew install poppler

@@ -1,0 +1,8 @@
+# GUI 版本依赖
+streamlit>=1.37.0
+pdf2image==1.16.3
+Pillow>=10.0.0,<11.0.0
+
+# macOS App 额外依赖
+tkinterdnd2  # 拖放支持
+py2app>=0.28  # macOS 打包工具

@@ -112,6 +112,19 @@ python run_app.py
 python TKGUI.py
 ```
 
+### macOS 原生应用 🆕
+
+```bash
+# 一键构建 macOS 应用
+chmod +x build_mac.sh
+./build_mac.sh
+
+# 或直接运行开发版
+python mac_app.py
+```
+
+详见 [macOS 应用文档](README_MACOS_APP.md)
+
 ### 使用流程
 
 1. 选择要转换的文件
