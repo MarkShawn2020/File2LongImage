@@ -158,7 +158,15 @@ rm -rf build dist
 # 构建应用
 echo ""
 echo "开始构建应用..."
-python setup.py py2app
+
+# 检测并使用正确的 setup 文件
+if [ -f "setup_parallel.py" ] && [ -f "mac_app_parallel.py" ]; then
+    echo "使用并行版本配置 (setup_parallel.py)..."
+    python setup_parallel.py py2app
+else
+    echo "使用标准版本配置 (setup.py)..."
+    python setup.py py2app
+fi
 
 # 检查构建结果
 if [ -d "dist/File2LongImage.app" ]; then
@@ -258,7 +266,8 @@ EOF
     
     # 创建临时目录
     mkdir -p dist/dmg
-    cp -r "dist/File2LongImage.app" dist/dmg/
+    # 使用 rsync 代替 cp 以避免复制不存在的文件
+    rsync -av --exclude='*.pyo' --exclude='*.pyc' --exclude='__pycache__' "dist/File2LongImage.app" dist/dmg/ 2>/dev/null || cp -r "dist/File2LongImage.app" dist/dmg/
     
     # 创建应用程序文件夹的符号链接
     ln -s /Applications dist/dmg/Applications

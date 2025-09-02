@@ -1,0 +1,140 @@
+# .gitattributes - Git 属性配置
+# 确保跨平台一致性
+
+# 自动检测文本文件并规范化行尾符
+* text=auto
+
+# 明确声明文本文件
+*.py text eol=lf
+*.pyw text eol=lf
+*.pyx text eol=lf
+*.pxd text eol=lf
+
+# Shell 脚本必须使用 LF
+*.sh text eol=lf
+*.bash text eol=lf
+*.command text eol=lf
+
+# 配置文件
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+# 文档
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+*.csv text eol=lf
+
+# Web 相关
+*.html text eol=lf
+*.htm text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.vue text eol=lf
+*.xml text eol=lf
+
+# 特殊文件
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+LICENSE text eol=lf
+README text eol=lf
+Makefile text eol=lf
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+
+# Python 相关
+requirements.txt text eol=lf
+setup.py text eol=lf
+setup.cfg text eol=lf
+MANIFEST.in text eol=lf
+tox.ini text eol=lf
+.pylintrc text eol=lf
+.flake8 text eol=lf
+pyproject.toml text eol=lf
+
+# 二进制文件（不进行行尾符转换）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.odt binary
+*.ods binary
+*.odp binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+*.dmg binary
+*.pkg binary
+*.deb binary
+*.rpm binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.pkl binary
+*.pickle binary
+*.npy binary
+*.npz binary
+*.h5 binary
+*.hdf5 binary
+*.whl binary
+*.egg binary
+
+# 字体文件
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# 音视频文件
+*.mp3 binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.wmv binary
+*.flv binary
+*.wav binary
+*.flac binary
+*.ogg binary
+
+# 语言统计（用于 GitHub）
+*.pyx linguist-language=Python
+*.pxd linguist-language=Python
+*.command linguist-language=Shell
+
+# 忽略供应商代码
+venv/* linguist-vendored
+node_modules/* linguist-vendored
+dist/* linguist-vendored
+build/* linguist-vendored
+
+# 忽略生成的文件
+*.spec linguist-generated
+*.app/* linguist-generated
